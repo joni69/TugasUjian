@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:background="@color/white">
+    <ImageView
+            android:id="@+id/canel2"
+            android:layout_width="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:textAppearance="?attr/textAppearanceListItem"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+        <TextView
+                android:layout_below="@+id/content2"
+                android:id="@+id/judul2"
+                android:hint="satu"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textAppearance="?attr/textAppearanceListItem"/>
+
+        <TextView
+                android:id="@+id/content2"
+                android:hint="dua"
+                android:textStyle="italic"
+                android:textSize="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textAppearance="?attr/textAppearanceListItem"/>
+        <TextView
+                android:layout_below="@+id/judul2"
+                android:layout_width="match_parent"
+                android:id="@+id/deskripsi2"
+                android:layout_marginStart="5dp"
+                android:text="ahjdvgfhjashjasdjakdjugafjsdjgahjdfas"
+                android:layout_height="wrap_content"
+        />
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/hapus"
+                android:text="Hapus"
+                android:textColor="@color/white"
+                android:layout_below="@id/deskripsi2"
+                android:layout_alignParentRight="true"
+                android:background="@color/black"
+                app:spinning_bar_color="@color/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/hapus"
+                android:visibility="visible"
+                android:layout_height="2dp"
+                android:layout_margin="9dp"
+                android:background="#000"/>
+    </RelativeLayout>
+</LinearLayout>

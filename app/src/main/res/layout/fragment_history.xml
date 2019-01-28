@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".Utama.Video.VideoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:id="@+id/texthistori"
+            android:text="Video habis di tonton : "
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclehistori"
+            android:layout_below="@+id/texthistori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

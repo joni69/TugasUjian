@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white">
+    <ImageView
+            android:id="@+id/canel1"
+            android:layout_width="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:textAppearance="?attr/textAppearanceListItem"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+        <TextView
+                android:layout_below="@+id/content1"
+                android:id="@+id/judul1"
+                android:hint="satu"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textAppearance="?attr/textAppearanceListItem"/>
+
+        <TextView
+                android:id="@+id/content1"
+                android:hint="dua"
+                android:textStyle="italic"
+                android:textSize="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textAppearance="?attr/textAppearanceListItem"/>
+        <TextView
+                android:layout_below="@+id/judul1"
+                android:layout_width="match_parent"
+                android:id="@+id/deskripsi1"
+                android:layout_marginStart="5dp"
+                android:text="ahjdvgfhjashjasdjakdjugafjsdjgahjdfas"
+                android:layout_height="wrap_content"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/deskripsi1"
+                android:visibility="visible"
+                android:layout_height="2dp"
+                android:layout_margin="9dp"
+                android:background="#000"/>
+    </RelativeLayout>
+</LinearLayout>
